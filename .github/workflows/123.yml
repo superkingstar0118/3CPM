@@ -25,6 +25,7 @@ jobs:
           echo "/opt/homebrew/opt/python@3.10/libexec/bin" >> $GITHUB_PATH
           python3.10 -m ensurepip
           python3.10 -m pip install setuptools
+          brew install pkg-config sqlite3
 
       - name: Install dependencies
         run: |
